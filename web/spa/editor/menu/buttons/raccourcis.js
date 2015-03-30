@@ -2,9 +2,9 @@
  * Created by palra on 27/03/15.
  */
 define([
-  'input',
-  'text!raccourcis.md',
-  'plugins/compiler',
+  'editor/input',
+  'text!editor/raccourcis.md',
+  'editor/plugins/compiler',
   'jquery'
 ], function (input, raccourcis, compiler, $) {
   var raccourcisButton = document.getElementById("raccourcis");

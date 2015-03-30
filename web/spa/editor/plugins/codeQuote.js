@@ -5,10 +5,10 @@
  * Created by palra on 27/03/15.
  */
 define([
-  'app',
-  'plugins/insertChar',
-  'plugins/deleteChar',
-  'menu/buttons/autocomplete'
+  'editor/app',
+  'editor/plugins/insertChar',
+  'editor/plugins/deleteChar',
+  'editor/menu/buttons/autocomplete'
 ], function (app, insertChar, deleteChar, button) {
 
   var codeQuote = {};

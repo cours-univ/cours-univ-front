@@ -1,8 +1,8 @@
 define([
   'jquery',
-  'menu/buttons/autocomplete',
-  'menu/buttons/raccourcis',
-  'menu/buttons/tabulation'
+  'editor/menu/buttons/autocomplete',
+  'editor/menu/buttons/raccourcis',
+  'editor/menu/buttons/tabulation'
 ], function ($) {
   // Regler la largeur des circle_on_off pour qu'ils soient carrés (rond avec les angles arrondis)
   var height = $('#menu .button .circle_on_off').height();

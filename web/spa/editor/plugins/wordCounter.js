@@ -3,7 +3,7 @@
  */
 
 define([
-  'input'
+  'editor/input'
 ], function (input) {
   var wordCounter = {};
 

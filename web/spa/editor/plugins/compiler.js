@@ -1,5 +1,5 @@
 define([
-  'app',
+  'editor/app',
   'jquery'
 ], function (app, $) {
   var input = app.input;

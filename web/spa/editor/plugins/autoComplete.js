@@ -2,12 +2,12 @@
  * Created by palra on 27/03/15.
  */
 define([
-  'app',
-  'character',
-  'characterExcept',
-  'menu/buttons/autocomplete',
-  'plugins/deleteChar',
-  'plugins/insertChar'
+  'editor/app',
+  'editor/character',
+  'editor/characterExcept',
+  'editor/menu/buttons/autocomplete',
+  'editor/plugins/deleteChar',
+  'editor/plugins/insertChar'
 ], function (app, character, characterExcept, button, deleteChar, insertChar) {
 
   var autoComplete = {};

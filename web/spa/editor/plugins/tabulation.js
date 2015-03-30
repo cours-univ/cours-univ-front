@@ -2,7 +2,7 @@
  * Created by palra on 27/03/15.
  */
 define([
-  'input'
+  'editor/input'
 ], function (input) {
   var tabulation = {};
 

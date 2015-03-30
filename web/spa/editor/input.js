@@ -1,5 +1,5 @@
 define([
-  'text!raccourcis.md'
+  'text!editor/raccourcis.md'
 ], function (raccourcis) {
   var input = document.getElementById('input');
 
