@@ -5,7 +5,7 @@
 requirejs.config({
   baseUrl: 'spa/js',
   paths: {
-    jquery: './../../components/jquery/dist/jquery.min'
+    jquery: '/components/jquery/dist/jquery.min'
   }
 });
 
@@ -19,5 +19,5 @@ require([
 require([
   'jquery'
 ], function ($) {
-  $('body').html('<h1>Hello world !</h1>')
+  $('#container').html('<h1>Hello world !</h1>');
 });

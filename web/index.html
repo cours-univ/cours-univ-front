@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cours</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="/components/highlightjs/styles/github.css">
+
+    <link rel="stylesheet" type="text/css" href="/components/normalize.css/normalize.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/markdown.css">
+    <link rel="stylesheet" type="text/css" href="/css/theme.css">
+
 </head>
 <body>
+<div id="container">
+</div>
 
+<script src="/components/highlightjs/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript"
+        src="/components/MathJax/MathJax.js">
+</script>
+<script type="text/javascript"
+        src="/components/MathJax/config/TeX-AMS-MML_HTMLorMML.js">
+</script>
+<script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {inlineMath: [['\\(','\\)']]}
+          });
+
+</script>
 
 <script type="text/javascript" src="/components/requirejs/require.js" data-main="/spa/js/main.js"></script>
+<script type="text/javascript" src="/js/parallax.js"></script>
+
 </body>
 </html>
