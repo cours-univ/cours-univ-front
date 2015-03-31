@@ -1,0 +1,27 @@
+#editor__menu__shortcuts__modal {
+    z-index: 140;
+}
+
+#editor__menu .editor__menu__button span {
+    z-index: 130;
+}
+
+#editor__menu .editor__menu__button  .editor__menu__button__circle_on_off {
+    z-index: 120;
+}
+
+#editor__menu .editor__menu__hide_button {
+    z-index: 111;
+}
+
+#editor__menu {
+    z-index: 110;
+}
+
+#editor__input {
+    z-index: 100;
+}
+
+#editor__result {
+    z-index: 90;
+}

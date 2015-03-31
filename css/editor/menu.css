@@ -1,10 +1,10 @@
 /* Transitions */
 
-#menu,
-#menu .button,
-#menu .button .circle_on_off,
-#input,
-#result,
+#editor__menu,
+#editor__menu .editor__menu__button,
+#editor__menu .editor__menu__button .editor__menu__button__circle_on_off,
+#editor__input,
+#editor__result,
 .window .title .close {
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
@@ -15,7 +15,7 @@
 
 /* Autres */
 
-#menu {
+#editor__menu {
     /* Position/Size */
 
     position: fixed;
@@ -25,7 +25,7 @@
     box-sizing: border-box;
 }
 
-#menu.hidden {
+#editor__menu.hidden {
     -webkit-transform: translate(0, -100%);
     -moz-transform: translate(0, -100%);
     -ie-transform: translate(0, -100%);
@@ -33,7 +33,7 @@
     transform: translate(0, -100%);
 }
 
-#menu .hide_buton {
+#editor__menu .editor__menu__hide_button {
     position: absolute;
 
     top: 100%;
@@ -47,7 +47,7 @@
     cursor: pointer;
 }
 
-#menu .hide_buton img {
+#editor__menu .editor__menu__hide_button img {
     position: relative;
 
     height: 60%;
@@ -57,7 +57,7 @@
     left: 50%;
 }
 
-#menu .hide_buton.up img {
+#editor__menu .editor__menu__hide_button.up img {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ie-transform: translate(-50%, -50%);
@@ -65,7 +65,7 @@
     transform: translate(-50%, -50%);
 }
 
-#menu .hide_buton.down img {
+#editor__menu .editor__menu__hide_button.down img {
     -webkit-transform: scaleY(-1) translate(-50%, 50%);
     -moz-transform: scaleY(-1) translate(-50%, 50%);
     -ie-transform: scaleY(-1) translate(-50%, 50%);
@@ -73,7 +73,7 @@
     transform: scaleY(-1) translate(-50%, 50%);
 }
 
-#menu .button {
+#editor__menu .editor__menu__button  {
     /* Position/Size */
 
     position: relative;
@@ -102,34 +102,34 @@
     cursor: pointer;
 }
 
-#menu .button.off {
+#editor__menu .editor__menu__button.off {
     color: #333;
 }
 
-#menu .button.on {
+#editor__menu .editor__menu__button.on {
     color: #EEE;
 }
 
-#menu .button:hover {
+#editor__menu .editor__menu__button:hover {
     box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#menu .button span {
+#editor__menu .editor__menu__button span {
     position: relative;
 }
 
-#menu .button .circle_on_off {
+#editor__menu .editor__menu__button .editor__menu__button__circle_on_off {
     position: absolute;
     top: 0;
     height: 100%;
     border-radius: 50%;
 }
 
-#menu .button.off .circle_on_off {
+#editor__menu .editor__menu__button.off .editor__menu__button__circle_on_off {
     left: 0;
 }
 
-#menu .button.on .circle_on_off {
+#editor__menu .editor__menu__button.on .editor__menu__button__circle_on_off {
     left: 100%;
 
     -webkit-transform: translate(-100%, 0);
