@@ -1,0 +1,61 @@
+/* Fonts */
+@import url(https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Oxygen+Mono);
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lora", serif;
+    color: #222;
+}
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 10px;
+}
+
+p, a, ul, ol, dl, dt, dd {
+    font-family: "Lora", serif;
+    font-size: 17px;
+}
+
+code {
+    font-family: "Oxygen Mono", monospace !important;
+    font-size: 14px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #DDD;
+}
+
+.hljs {
+    -moz-box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.3);
+    -o-box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0px 0px 9px rgba(0, 0, 0, 0.3);
+    background-image: url("/img/noisy-texture.png");
+
+    padding: 1em;
+}

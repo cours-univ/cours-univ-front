@@ -1,0 +1,41 @@
+<div id="editor__menu" class="hidden">
+
+    <div id="editor__menu__autocomplete" class="editor__menu__button editor__menu__button--toggle off">
+        <span>Autocomplétion</span>
+        <div class="editor__menu__button__circle_on_off"></div>
+    </div>
+
+    <div id="editor__menu__tabulation" class="editor__menu__button editor__menu__button--toggle off">
+        <span>Tabulation : Tab</span>
+        <div class="editor__menu__button__circle_on_off"></div>
+    </div>
+
+    <div id="editor__menu__shortcuts" class="editor__menu__button editor__menu__button--click">Raccourcis</div>
+
+    <div class="editor__menu__hide_button down">
+        <img src="/img/fleche-noire-haut.png">
+    </div>
+
+</div>
+
+<form id="editor__composer" method="POST">
+    <textarea id="editor__input" name="markup" ></textarea>
+</form>
+<div id="editor__result" ></div>
+
+<!-- Fenetre qui contient les raccourcis -->
+<div class="window hidden" id="editor__menu__shortcuts__modal">
+    <div class="title">
+        <span>Raccourcis</span>
+
+        <div class="close">
+            <span>&#10060;</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="text">
+
+        </div>
+    </div>
+</div>
