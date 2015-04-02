@@ -24,7 +24,7 @@ define(function () {
 
     var that = this;
 
-    this.element.addEventListener('click', function () {
+    this.element.addEventListener('click', function () { // TODO : Erreur -> Uncaught TypeError: Cannot read property 'addEventListener' of null
       that.toggle();
       that.checkState();
     });

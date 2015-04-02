@@ -45,6 +45,23 @@
 
                 });
 
+                // Ouvir les dropdowns quand la souris est dessus
+                $(".editor__menu__dropdown").mouseenter(function() {
+                    $(this).addClass("open");
+                });
+
+                $(".editor__menu__dropdown").mouseleave(function() {
+                    $(this).removeClass("open");
+                });
+
+                // Fermer et ouvir les dropdowns au clic
+                $(".editor__menu__dropdown > .editor__menu__button--click").click(function() {
+                    if ($(this).parent().hasClass("open"))
+                        $(this).parent().removeClass("open");
+                    else
+                        $(this).parent().addClass("open");
+                });
+
                 this.buttons = {};
                 var that = this;
                 buttons.forEach(function(button) {
