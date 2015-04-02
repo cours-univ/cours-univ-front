@@ -6,7 +6,8 @@
 #editor__composer__input,
 #editor__result,
 .editor__window__title__close,
-.editor__menu__dropdown__content {
+.editor__menu__dropdown__content,
+section {
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     -ie-transition: all 0.6s;
@@ -120,18 +121,18 @@
     position: relative;
 }
 
-.editor__menu__button__circle_on_off {
+.editor__menu__button--toggle__circle {
     position: absolute;
     top: 0;
     height: 100%;
     border-radius: 50%;
 }
 
-.editor__menu__button.off .editor__menu__button__circle_on_off {
+.editor__menu__button--toggle.off .editor__menu__button--toggle__circle {
     left: 0;
 }
 
-.editor__menu__button.on .editor__menu__button__circle_on_off {
+.editor__menu__button--toggle.on .editor__menu__button--toggle__circle {
     left: 100%;
 
     -webkit-transform: translate(-100%, 0);

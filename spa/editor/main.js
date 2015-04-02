@@ -28,7 +28,7 @@
       render: function () {
         this.$el.html(_.template(editorTpl, {}));
         var app = new App(
-          document.getElementById('editor__input'),
+          document.getElementById('editor__composer__input'),
           document.getElementById('editor__result')
         );
 

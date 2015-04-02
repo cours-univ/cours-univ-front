@@ -6,14 +6,16 @@ define([
 ],function ($) {
   function Shortcuts(app) {
     this.app = app;
-    var $button = $("#editor__menu__shortcuts");
-    var $modal =  $('#editor__menu__shortcuts__modal');
+    var $button = $("#editor__menu__raccourcis");
+    var $modal =  $('#editor__window--shortcuts');
+
+    // TODO : Cette foncion n'est pas appelée
 
     $button.click(function () {
       $modal.removeClass("hidden");
     });
 
-    $("#editor__menu__shortcuts__modal .title .close").click(function () {
+    $("#editor__window--shortcuts .editor__window__title__close").click(function () {
       $modal.addClass("hidden");
     });
 

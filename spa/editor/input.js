@@ -17,8 +17,8 @@ define([
       that.app.trigger('input.keydown', Input.buildEvent.bind(elem)(e));
     });
 
-    if (localStorage.getItem('input') !== "" || localStorage.getItem('input') !== null) {
-      this.element.value = localStorage.getItem('input');
+    if (localStorage.getItem('editor__composer__input') !== "" || localStorage.getItem('editor__composer__input') !== null) {
+      this.element.value = localStorage.getItem('editor__composer__input');
     }
   };
 

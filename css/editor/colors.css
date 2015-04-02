@@ -16,7 +16,7 @@
 }
 
 /* Normal */
-.editor__menu__button.off .editor__menu__button__circle, /* Cercle des bouttons éteinds */
+.editor__menu__button--toggle.off .editor__menu__button--toggle__circle, /* Cercle des bouttons éteinds */
 .editor__window__title__close
  {
     background-color: #2980b9;
@@ -30,7 +30,7 @@
 }
 
 /* Très foncé */
-.editor__menu__button.on .editor__menu__button__circle /* Cercle des bouttons allumés */
+.editor__menu__button--toggle.on .editor__menu__button--toggle__circle /* Cercle des bouttons allumés */
  {
     background-color: #296D99;
 }
