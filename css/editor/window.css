@@ -1,4 +1,4 @@
-.window {
+.editor__window {
     position: fixed;
 
     top: 50%;
@@ -14,7 +14,7 @@
     width: 50%;
 }
 
-.window .title {
+.editor__window__title {
     position: relative;
 
     top: 0;
@@ -33,7 +33,7 @@
     padding-left: 30px;
 }
 
-.window .title span {
+.editor__window__title span {
     display: block;
 
     position: relative;
@@ -46,7 +46,7 @@
     -ie-transform: translate(0, -50%);
 }
 
-.window .title .close {
+.editor__window__title__close {
     position: absolute;
 
     height: 30px;
@@ -66,11 +66,11 @@
     cursor: pointer;
 }
 
-.window .title .close:hover {
+.editor__window__title__close:hover {
     box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-.window .title .close span {
+.editor__window__title__close span {
     display: block;
 
     top: 50%;
@@ -87,7 +87,7 @@
     text-align: center;
 }
 
-.window .content {
+.editor__window__content {
     background-color: #FFF;
     border-radius: 0 0 30px 30px;
     padding-bottom: 30px;
@@ -95,7 +95,7 @@
     box-sizing: border-box;
 }
 
-.window .content .text {
+.editor__window__content__text {
     position: relative;
 
     height: 100%;
@@ -113,12 +113,12 @@
 
 /* FENETRES CACHEES */
 
-.window.hidden {
+.editor__window.hidden {
     border-radius: 30px 30px 0 0;
     left: 150%;
 }
 
-.window.hidden .content {
+.editor__window.hidden .editor__window__content {
     height: 0;
     padding-top: 0;
     padding-bottom: 0;
@@ -126,8 +126,8 @@
 
 /* FENETRES ANIMATIONS */
 
-.window,
-.window .content {
+.editor__window,
+.editor__window__content {
     -webkit-transition: all 0.6s ease 0.6s;
     -moz-transition: all 0.6s ease 0.6s;
     -ie-transition: all 0.6s ease 0.6s;
@@ -135,7 +135,7 @@
     transition: all 0.6s ease 0.6s;
 }
 
-.window {
+.editor__window {
     -webkit-transition: left 0.6s ease 0s;
     -moz-transition: left 0.6s ease 0s;
     -ie-transition: left 0.6s ease 0s;
@@ -143,8 +143,8 @@
     transition: left 0.6s ease 0s;
 }
 
-.window.hidden,
-.window.hidden .content {
+.editor__window.hidden,
+.editor__window.hidden .editor__window__content {
     -webkit-transition: all 0.6s ease;
     -moz-transition: all 0.6s ease;
     -ie-transition: all 0.6s ease;
@@ -152,7 +152,7 @@
     transition: all 0.6s ease;
 }
 
-.window.hidden {
+.editor__window.hidden {
     -webkit-transition: left 0.6s ease 0.6s;
     -moz-transition: left 0.6s ease 0.6s;
     -ie-transition: left 0.6s ease 0.6s;

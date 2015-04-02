@@ -1,41 +1,64 @@
-<div id="editor__menu" class="hidden">
-
-    <div id="editor__menu__autocomplete" class="editor__menu__button editor__menu__button--toggle off">
-        <span>Autocomplétion</span>
-        <div class="editor__menu__button__circle_on_off"></div>
-    </div>
-
-    <div id="editor__menu__tabulation" class="editor__menu__button editor__menu__button--toggle off">
-        <span>Tabulation : Tab</span>
-        <div class="editor__menu__button__circle_on_off"></div>
-    </div>
-
-    <div id="editor__menu__shortcuts" class="editor__menu__button editor__menu__button--click">Raccourcis</div>
-
-    <div class="editor__menu__hide_button down">
-        <img src="/img/fleche-noire-haut.png">
-    </div>
-
+<div id="editor__splashscreen">
+    <img src="img/logo.png">
 </div>
 
-<form id="editor__composer" method="POST">
-    <textarea id="editor__input" name="markup" ></textarea>
-</form>
-<div id="editor__result" ></div>
+<nav>
+    <div id="editor__menu" class="">
+
+        <div id="editor__menu__tabulation" class="editor__menu__button--toggle editor__menu__button off">
+            <span>Tabulation : Tab</span>
+            <!-- Cercle qui se déplasse en fonction de si le bouton est on ou off -->
+            <div class="editor__menu__button--toggle__circle"></div>
+        </div>
+
+        <div id="editor__menu__options" class="editor__menu__dropdown">
+
+            <!-- Bouton principal du dropdown -->
+            <div class="editor__menu__button--click editor__menu__button">Options</div>
+
+            <div class="editor__menu__dropdown__content">
+
+                <div id="editor__menu__options__autocomplete" class="editor__menu__button--toggle editor__menu__button off">
+                    <span>Autocomplétion</span>
+                    <div class="editor__menu__button--toggle__circle"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="editor__menu__raccourcis" class="editor__menu__button--click editor__menu__button">Raccourcis</div>
+
+        <div class="editor__menu__hide_button down">
+            <img src="/img/fleche-noire-haut.png">
+        </div>
+
+    </div>
+</nav>
+
+<section>
+    <form id="editor__composer" method="POST">
+        <textarea id="editor__composer__input" name="markup" ></textarea>
+    </form>
+    <div id="editor__result" ></div>
+</section>
+
+<footer>
+    <div id="editor__status-bar">Test</div>
+</footer>
 
 <!-- Fenetre qui contient les raccourcis -->
-<div class="window hidden" id="editor__menu__shortcuts__modal">
-    <div class="title">
+<div id="editor__window--shortcuts" class="editor__window hidden">
+    <div class="editor__window__title">
         <span>Raccourcis</span>
 
-        <div class="close">
+        <div class="editor__window__title__close">
             <span>&#10060;</span>
         </div>
     </div>
 
-    <div class="content">
-        <div class="text">
-
+    <div class="editor__window__content">
+        <div class="editor__window__content__text">
+            
         </div>
     </div>
 </div>

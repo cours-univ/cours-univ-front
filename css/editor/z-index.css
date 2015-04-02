@@ -1,27 +1,55 @@
-#editor__menu__shortcuts__modal {
-    z-index: 140;
+#editor__splashscreen
+{
+	z-index: 1000;
 }
 
-#editor__menu .editor__menu__button span {
-    z-index: 130;
+#editor__status-bar
+{
+	z-index: 150;
 }
 
-#editor__menu .editor__menu__button  .editor__menu__button__circle_on_off {
-    z-index: 120;
+.editor__window
+{
+	z-index: 140;
 }
 
-#editor__menu .editor__menu__hide_button {
-    z-index: 111;
+.editor__menu__button--dropdown__content,
+.editor__menu__button--dropdown__content > div
+{
+	z-index: 135;
 }
 
-#editor__menu {
-    z-index: 110;
+.editor__menu__button span
+{
+	z-index: 130;
 }
 
-#editor__input {
-    z-index: 100;
+.editor__menu__button--toggle__circle
+{
+	z-index: 120;
 }
 
-#editor__result {
-    z-index: 90;
+#editor__menu > .editor__menu__button
+{
+	z-index: 112;
+}
+
+.editor__menu__hide_button
+{
+	z-index: 111;
+}
+
+#editor__menu
+{
+	z-index: 110;
+}
+
+#editor__composer__input
+{
+	z-index: 100;
+}
+
+#editor__result
+{
+	z-index: 90;
 }

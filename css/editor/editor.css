@@ -1,7 +1,25 @@
-#editor__input {
+section {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    top: 0;
+    bottom: 20px;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+}
+
+#editor__composer__input {
     width: 45%;
     height: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     font-family: "Courier New", monospace;
@@ -31,4 +49,18 @@
 
     box-sizing: border-box;
     background-color: #FBFBFB;
+}
+
+#editor__status-bar {
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+    padding: 2px;
+
+    background-color: white;
+
+    font-size: 12px;
+
+    border-top: 1px solid #AAA;
 }

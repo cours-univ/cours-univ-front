@@ -1,32 +1,36 @@
 /* Très Clair */
 #editor__menu, /* Fond du menu */
-#editor__menu .editor__menu__hide_button, /* Bouton pour afficher/cacher le menu */
-.window .title /* Titres des fenetres */
+.editor__menu__hide_button, /* Bouton pour afficher/cacher le menu */
+.editor__menu__dropdown__content
  {
     background-color: #5EB3EC;
 }
 
 /* Clair */
-#editor__menu .editor__menu__button, /* Bouttons "click" */
-#editor__menu .editor__menu__button.off, /* Bouttons "toggle" éteinds */
-.window .title .close {
+.editor__menu__button--click, /* Bouttons "click" */
+.editor__menu__button--dropdown, /* Bouttons "dropdown" */
+.editor__menu__button--toggle.off, /* Bouttons "toggle" éteinds */
+.editor__window__title /* Titres des fenetres */
+ {
     background-color: #3498db;
 }
 
 /* Normal */
-#editor__menu .editor__menu__button.off .editor__menu__button__circle_on_off /* Cercle des bouttons éteinds */
+.editor__menu__button.off .editor__menu__button__circle, /* Cercle des bouttons éteinds */
+.editor__window__title__close
  {
     background-color: #2980b9;
 }
 
 /* Foncé */
-#editor__menu .editor__menu__button.on /* Bouttons "toggle" allumés */
+.editor__menu__button--toggle.on /* Bouttons "toggle" allumés */
+.editor__menu__dropdown.open > .editor__menu__button
  {
     background-color: #2980b9;
 }
 
 /* Très foncé */
-#editor__menu .editor__menu__button.on .editor__menu__button__circle_on_off /* Cercle des bouttons allumés */
+.editor__menu__button.on .editor__menu__button__circle /* Cercle des bouttons allumés */
  {
     background-color: #296D99;
 }

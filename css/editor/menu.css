@@ -1,11 +1,12 @@
-/* Transitions */
+/* -------------------- TRANSITIONS -------------------- */
 
 #editor__menu,
-#editor__menu .editor__menu__button,
-#editor__menu .editor__menu__button .editor__menu__button__circle_on_off,
-#editor__input,
+.editor__menu__button,
+.editor__menu__button__circle_on_off,
+#editor__composer__input,
 #editor__result,
-.window .title .close {
+.editor__window__title__close,
+.editor__menu__dropdown__content {
     -webkit-transition: all 0.6s;
     -moz-transition: all 0.6s;
     -ie-transition: all 0.6s;
@@ -13,16 +14,23 @@
     transition: all 0.6s;
 }
 
-/* Autres */
+/* -------------------- MENU -------------------- */
 
 #editor__menu {
-    /* Position/Size */
-
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     box-sizing: border-box;
+}
+
+#editor__menu * {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #editor__menu.hidden {
@@ -33,7 +41,7 @@
     transform: translate(0, -100%);
 }
 
-#editor__menu .editor__menu__hide_button {
+.editor__menu__hide_button {
     position: absolute;
 
     top: 100%;
@@ -47,7 +55,7 @@
     cursor: pointer;
 }
 
-#editor__menu .editor__menu__hide_button img {
+.editor__menu__hide_button img {
     position: relative;
 
     height: 60%;
@@ -57,7 +65,7 @@
     left: 50%;
 }
 
-#editor__menu .editor__menu__hide_button.up img {
+.editor__menu__hide_button.up img {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ie-transform: translate(-50%, -50%);
@@ -65,7 +73,7 @@
     transform: translate(-50%, -50%);
 }
 
-#editor__menu .editor__menu__hide_button.down img {
+.editor__menu__hide_button.down img {
     -webkit-transform: scaleY(-1) translate(-50%, 50%);
     -moz-transform: scaleY(-1) translate(-50%, 50%);
     -ie-transform: scaleY(-1) translate(-50%, 50%);
@@ -73,9 +81,9 @@
     transform: scaleY(-1) translate(-50%, 50%);
 }
 
-#editor__menu .editor__menu__button  {
-    /* Position/Size */
+/* -------------------- BOUTONS DU MENU -------------------- */
 
+.editor__menu__button {
     position: relative;
     float: left;
 
@@ -88,48 +96,42 @@
 
     box-sizing: border-box;
 
-    /* Borders/Shadows */
-
     box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.1);
     border-radius: 25px;
-
-    /* Colors */
-
+    
     color: #333;
-
-    /* Other */
 
     cursor: pointer;
 }
 
-#editor__menu .editor__menu__button.off {
-    color: #333;
-}
-
-#editor__menu .editor__menu__button.on {
+.editor__menu__button.on {
     color: #EEE;
 }
 
-#editor__menu .editor__menu__button:hover {
+.editor__menu__button.off {
+    color: #333;
+}
+
+.editor__menu__button:hover {
     box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.8);
 }
 
-#editor__menu .editor__menu__button span {
+.editor__menu__button span {
     position: relative;
 }
 
-#editor__menu .editor__menu__button .editor__menu__button__circle_on_off {
+.editor__menu__button__circle_on_off {
     position: absolute;
     top: 0;
     height: 100%;
     border-radius: 50%;
 }
 
-#editor__menu .editor__menu__button.off .editor__menu__button__circle_on_off {
+.editor__menu__button.off .editor__menu__button__circle_on_off {
     left: 0;
 }
 
-#editor__menu .editor__menu__button.on .editor__menu__button__circle_on_off {
+.editor__menu__button.on .editor__menu__button__circle_on_off {
     left: 100%;
 
     -webkit-transform: translate(-100%, 0);
@@ -137,4 +139,40 @@
     -ie-transform: translate(-100%, 0);
     -o-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
+}
+
+.editor__menu__dropdown
+{
+    position: relative;
+    float: left;
+    height: 100%;
+}
+
+.editor__menu__dropdown__content
+{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+
+    -webkit-transform: translate(0, -200%);
+    -moz-transform: translate(0, -200%);
+    -ie-transform: translate(0, -200%);
+    -o-transform: translate(0, -200%);
+    transform: translate(0, -200%);
+}
+
+.editor__menu__dropdown.open .editor__menu__dropdown__content
+{
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ie-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.editor__menu__dropdown__content .editor__menu__button
+{
+    margin: 10px;
 }
