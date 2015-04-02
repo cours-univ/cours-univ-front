@@ -62,12 +62,18 @@
                         $(this).parent().addClass("open");
                 });
 
-                this.buttons = {};
-                var that = this;
-                buttons.forEach(function(button) {
-                    var Plugin = require(button);
-                    that.buttons[button.slice(20)] = new Plugin(app);
-                });
+                // TODO: Marche pas
+                // this.buttons = {};
+                // var that = this;
+                // buttons.forEach(function(button) {
+                //     var Plugin = require(button);
+                //     that.buttons[button.slice(20)] = new Plugin(app);
+                // });
+                
+                // Splashscreen
+                setTimeout(function(){
+                    $('#editor__splashscreen').hide();
+                }, 1000);
             });
         }
 

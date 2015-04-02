@@ -64,3 +64,25 @@ footer {
 
     border-top: 1px solid #AAA;
 }
+
+#editor__splashscreen {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+#editor__splashscreen img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ie-transform: translate(-50%, -50%);
+}
